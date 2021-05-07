@@ -1,3 +1,100 @@
+/* 초기화 */
 body {
-  background-color: tomato;
+  /* background-color: tomato; */
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 공통 */
+.l_wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* 헤더 */
+header {
+  background-color: teal;
+  background-image: url(./images/header-bg.png);
+  overflow: hidden;
+}
+
+.intro {
+  padding: 50px;
+  margin-top: 100px;
+  border-width: 23px 30px 0 30px;
+  border-style: solid;
+  color: orange;
+  border-color: orange;
+  background-image: url(./images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 570px;
+  background-position-y: 50px;
+  /* 단축 속성이 왜 안먹지??? */
+  /* background-position: 200px, 50px; */
+}
+
+.intro h1 {
+  display: inline-block;
+  border-bottom: 4px solid orange;
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+}
+
+.intro p {
+  line-height: 1.7;
+  padding-right: 320px;
+}
+
+/* 메인 */
+main {
+  background-color: #ddd;
+  padding: 30px 0;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__item {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__item img {
+  /* 이미지에 이상한 공간이 왜생기지????*/
+  vertical-align: top;
+}
+.card__item h2 {
+  border-top: 3px solid orange;
+  color: orange;
+  font-size: 14px;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+footer {
+  border-top: 2px solid #ccc;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 12px;
+  color: #bbb;
+  padding: 20px 0;
 }
