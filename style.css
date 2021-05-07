@@ -41,6 +41,7 @@ header {
   background-repeat: no-repeat;
   background-position-x: 570px;
   background-position-y: 50px;
+  /* url에 쿼테이션을 안붙이는게 권장사항? */
   /* 단축 속성이 왜 안먹지??? */
   /* background-position: 200px, 50px; */
 }
