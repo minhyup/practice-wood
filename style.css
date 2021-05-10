@@ -1,0 +1,174 @@
+/* 초기화 */
+body {
+  /* background-color: tomato; */
+  margin: 0;
+  padding: 0;
+  font-family: "arial";
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* 공통 */
+.l_wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.l_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.l_col {
+  /* width: calc(100% / 3); */
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.l_col_12_12 {
+  width: 100%;
+}
+.l_col_11_12 {
+  width: 91.66666667%;
+}
+.l_col_10_12 {
+  width: 83.33333333%;
+}
+.l_col_9_12 {
+  width: 75%;
+}
+.l_col_8_12 {
+  width: 66.66666667%;
+}
+.l_col_7_12 {
+  width: 58.33333333%;
+}
+.l_col_6_12 {
+  width: 50%;
+}
+.l_col_5_12 {
+  width: 41.66666667%;
+}
+.l_col_4_12 {
+  width: 33.33333333%;
+}
+.l_col_3_12 {
+  width: 25%;
+}
+.l_col_2_12 {
+  width: 16.66666667%;
+}
+.l_col_1_12 {
+  width: 8.33333333%;
+}
+
+/* 헤더 */
+header {
+  background-color: teal;
+  background-image: url(./images/header-bg.png);
+  overflow: hidden;
+}
+
+.intro {
+  padding: 50px;
+  margin-top: 100px;
+  border-width: 23px 30px 0 30px;
+  border-style: solid;
+  color: orange;
+  border-color: orange;
+  background-image: url(./images/container-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: 570px;
+  background-position-y: 50px;
+  /* url에 쿼테이션을 안붙이는게 권장사항? */
+  /* 단축 속성이 왜 안먹지??? */
+  /* background-position: 200px, 50px; */
+}
+
+.intro h1 {
+  display: inline-block;
+  border-bottom: 4px solid orange;
+  margin-bottom: 50px;
+  letter-spacing: 10px;
+}
+
+.intro p {
+  line-height: 1.7;
+  padding-right: 320px;
+}
+
+/* 메인 */
+main {
+  background-color: #ddd;
+  padding: 30px 0;
+}
+
+/* 카드 */
+.card {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./images/type-a.png);
+  height: 230px;
+}
+
+.card img {
+  /* 이미지에 이상한 공간이 왜생기지????*/
+  vertical-align: top;
+  /* background-size: cover; */
+}
+.card h2 {
+  border-top: 3px solid orange;
+  color: orange;
+  font-size: 14px;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  background-image: url(images/play.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+footer {
+  border-top: 2px solid #ccc;
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 12px;
+  color: #bbb;
+  padding: 20px 0;
+}
+
+@media (min-width: 400px) {
+  .l_col {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .l_col {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .l_col {
+    width: 50%;
+    /* width: 33.33333333%; */
+  }
+}
