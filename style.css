@@ -19,8 +19,9 @@ img {
 
 /* 공통 */
 .l_wrapper {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 0 4px;
 }
 
 .l_row {
@@ -89,8 +90,8 @@ header {
   border-color: orange;
   background-image: url(./images/container-bg.png);
   background-repeat: no-repeat;
-  background-position-x: 570px;
-  background-position-y: 50px;
+  background-position-x: 100%;
+  background-position-y: -50%;
   /* url에 쿼테이션을 안붙이는게 권장사항? */
   /* 단축 속성이 왜 안먹지??? */
   /* background-position: 200px, 50px; */
